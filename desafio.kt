@@ -64,5 +64,9 @@ fun main() {
         Usuario("Clarice", "clarice@ficticio.com")
     )
 
-
+    // Inclusão das variáveis de especificação do conteúdo
+    val conteudo1 = ConteudoEducacional("Aprenda JavaScript do Zero", 2340)
+    val conteudo2 = ConteudoEducacional("Desenvolvimento Backend com o framework Spring Boot", 3000)
+    val conteudo3 = ConteudoEducacional("Modelos de Deep Learning e outras técnicas do estado-da-arte", 5520)
+    
     
