@@ -45,7 +45,16 @@ data class Formacao(val nome: String, val conteudos: List<ConteudoEducacional>, 
     }
 }
 
-
+// Inclusão da função que permite a matrícula do usuário cadastrado no curso desejado
+fun matricularUsuario(formacao: Formacao, nomeUsuario: String, usuarios: List<Usuario>) {
+    val usuario = usuarios.find { it.nome.equals(nomeUsuario, ignoreCase = true) }
+    if (usuario != null) {
+        formacao.matricular(usuario)
+        println("$nomeUsuario matriculado na formação ${formacao.nome}")
+    } else {
+        println("Usuário $nomeUsuario não encontrado")
+    }
+}
 
 fun main() {
     TODO("Analise as classes modeladas para este domínio de aplicação e pense em formas de evoluí-las.")
