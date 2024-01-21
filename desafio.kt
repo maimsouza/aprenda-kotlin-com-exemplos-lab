@@ -18,11 +18,15 @@ data class Formacao(val nome: String, val conteudos: List<ConteudoEducacional>, 
     val inscritos = mutableListOf<Usuario>()
     val conteudo = conteudos
     
-   // Inclusão da adição de inscritos
+    // Inclusão da adição de inscritos
     fun matricular(usuario: Usuario) {
         inscritos.add(usuario)
     }
 
+    // Inclusão da função para exibição do nível do curso
+    fun exibirNivel() {
+        println("O curso $nome possui nível $nivel")
+    }
     
 
 fun main() {
