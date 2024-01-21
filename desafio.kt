@@ -1,6 +1,5 @@
-// [Template no Kotlin Playground](https://pl.kotl.in/WcteahpyN)
-
-enum class Nivel { BASICO, INTERMEDIARIO, DIFICIL }
+// Alteração dos nomes dos níveis dos cursos para ficar mais de acordo com o site da DIO
+enum class Nivel { INICIANTE, INTERMEDIARIO, AVANCADO }
 
 class Usuario
 
