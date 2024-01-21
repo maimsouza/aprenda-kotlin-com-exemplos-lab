@@ -1,7 +1,15 @@
 // Alteração dos nomes dos níveis dos cursos para ficar mais de acordo com o site da DIO
 enum class Nivel { INICIANTE, INTERMEDIARIO, AVANCADO }
 
-class Usuario
+// Alteração para data class, inclusão das variáveis de usuário e a atribuição de um id automatizado para os usuários cadastrados
+data class Usuario(val nome: String, val email: String) {
+    companion object {
+        var proximoId = 1
+    }
+
+    val id = "usuario${proximoId++}"
+}
+
 
 data class ConteudoEducacional(var nome: String, val duracao: Int = 60)
 
