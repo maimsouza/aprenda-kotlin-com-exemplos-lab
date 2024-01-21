@@ -13,9 +13,10 @@ data class Usuario(val nome: String, val email: String) {
 // Alteração de 'var' para 'val' em nome
 data class ConteudoEducacional(val nome: String, val duracao: Int = 60)
 
-data class Formacao(val nome: String, var conteudos: List<ConteudoEducacional>) {
-
+// Inclusão da 'val' nivel da formação e da 'val' conteudo
+data class Formacao(val nome: String, val conteudos: List<ConteudoEducacional>, val nivel: Nivel) {
     val inscritos = mutableListOf<Usuario>()
+    val conteudo = conteudos
     
     fun matricular(usuario: Usuario) {
         TODO("Utilize o parâmetro $usuario para simular uma matrícula (usar a lista de $inscritos).")
