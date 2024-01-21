@@ -18,10 +18,12 @@ data class Formacao(val nome: String, val conteudos: List<ConteudoEducacional>, 
     val inscritos = mutableListOf<Usuario>()
     val conteudo = conteudos
     
+   // Inclusão da adição de inscritos
     fun matricular(usuario: Usuario) {
-        TODO("Utilize o parâmetro $usuario para simular uma matrícula (usar a lista de $inscritos).")
+        inscritos.add(usuario)
     }
-}
+
+    
 
 fun main() {
     TODO("Analise as classes modeladas para este domínio de aplicação e pense em formas de evoluí-las.")
