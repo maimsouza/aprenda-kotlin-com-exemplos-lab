@@ -82,13 +82,20 @@ fun main() {
     matricularUsuario(formacao3, "Clarice", usuarios)
     matricularUsuario(formacao3, "Márcio", usuarios)
 
-    // Inclusão da exibição dos inscritos e do conteúdo de cada formação
+   // Inclusão da exibição dos inscritos e do conteúdo de cada formação
     formacao1.exibirInscritos()
-	formacao1.exibirConteudo()
+    formacao1.exibirConteudo()
 
-	formacao2.exibirInscritos()
-	formacao2.exibirConteudo()
+    formacao2.exibirInscritos()
+    formacao2.exibirConteudo()
 
-	formacao3.exibirInscritos()
-	formacao3.exibirConteudo()
-    
+    formacao3.exibirInscritos()
+    formacao3.exibirConteudo()
+}
+	
+
+	
+	
+
+	
+	
