@@ -74,5 +74,11 @@ fun main() {
     val formacao2 = Formacao("Kotlin Backend Developer", listOf(conteudo2), Nivel.INTERMEDIARIO)
     val formacao3 = Formacao("Formação Machine Learning Specialist", listOf(conteudo3), Nivel.AVANCADO)
 
-    
+    // Inclusão da matrícula do usuário no curso desejado
+    matricularUsuario(formacao1, "Maíra", usuarios)
+    matricularUsuario(formacao1, "Márcio", usuarios)
+    matricularUsuario(formacao2, "Clarice", usuarios)
+    matricularUsuario(formacao2, "Maíra", usuarios)
+    matricularUsuario(formacao3, "Clarice", usuarios)
+    matricularUsuario(formacao3, "Márcio", usuarios)
     
