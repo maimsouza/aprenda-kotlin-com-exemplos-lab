@@ -27,7 +27,17 @@ data class Formacao(val nome: String, val conteudos: List<ConteudoEducacional>, 
     fun exibirNivel() {
         println("O curso $nome possui nível $nivel")
     }
-    
+
+    // Inclusão da exibição do conteúdo e conversão da duração de minutos para horas 
+    fun exibirConteudo() {
+    println("Conteúdo do curso $nome:")
+    conteudos.forEach {
+        val horas = it.duracao / 60
+        val minutos = it.duracao % 60
+        println("- ${it.nome}, Duração: $horas horas e $minutos minutos")
+    }
+}
+
 
 fun main() {
     TODO("Analise as classes modeladas para este domínio de aplicação e pense em formas de evoluí-las.")
