@@ -57,6 +57,12 @@ fun matricularUsuario(formacao: Formacao, nomeUsuario: String, usuarios: List<Us
 }
 
 fun main() {
-    TODO("Analise as classes modeladas para este domínio de aplicação e pense em formas de evoluí-las.")
-    TODO("Simule alguns cenários de teste. Para isso, crie alguns objetos usando as classes em questão.")
-}
+    // Inclusão da lista de usuários
+    val usuarios = listOf(
+        Usuario("Maíra", "maira@ficticio.com"),
+        Usuario("Márcio", "marcio@ficticio.com"),
+        Usuario("Clarice", "clarice@ficticio.com")
+    )
+
+
+    
