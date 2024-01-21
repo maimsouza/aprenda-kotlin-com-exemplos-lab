@@ -38,6 +38,14 @@ data class Formacao(val nome: String, val conteudos: List<ConteudoEducacional>, 
     }
 }
 
+    // Inclusão da exibição dos inscritos
+    fun exibirInscritos() {
+        println("Usuários inscritos na formação $nome")
+        inscritos.forEach { println(it) }
+    }
+}
+
+
 
 fun main() {
     TODO("Analise as classes modeladas para este domínio de aplicação e pense em formas de evoluí-las.")
