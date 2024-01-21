@@ -73,3 +73,6 @@ fun main() {
     val formacao1 = Formacao("JavaScript Developer", listOf(conteudo1), Nivel.INICIANTE)
     val formacao2 = Formacao("Kotlin Backend Developer", listOf(conteudo2), Nivel.INTERMEDIARIO)
     val formacao3 = Formacao("Formação Machine Learning Specialist", listOf(conteudo3), Nivel.AVANCADO)
+
+    
+    
