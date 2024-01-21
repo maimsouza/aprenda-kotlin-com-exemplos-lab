@@ -69,4 +69,7 @@ fun main() {
     val conteudo2 = ConteudoEducacional("Desenvolvimento Backend com o framework Spring Boot", 3000)
     val conteudo3 = ConteudoEducacional("Modelos de Deep Learning e outras técnicas do estado-da-arte", 5520)
     
-    
+    // Inclusão das variáveis de especificação da formação
+    val formacao1 = Formacao("JavaScript Developer", listOf(conteudo1), Nivel.INICIANTE)
+    val formacao2 = Formacao("Kotlin Backend Developer", listOf(conteudo2), Nivel.INTERMEDIARIO)
+    val formacao3 = Formacao("Formação Machine Learning Specialist", listOf(conteudo3), Nivel.AVANCADO)
