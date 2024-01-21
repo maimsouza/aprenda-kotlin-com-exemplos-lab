@@ -10,8 +10,8 @@ data class Usuario(val nome: String, val email: String) {
     val id = "usuario${proximoId++}"
 }
 
-
-data class ConteudoEducacional(var nome: String, val duracao: Int = 60)
+// Alteração de 'var' para 'val' em nome
+data class ConteudoEducacional(val nome: String, val duracao: Int = 60)
 
 data class Formacao(val nome: String, var conteudos: List<ConteudoEducacional>) {
 
